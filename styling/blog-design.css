@@ -1,0 +1,219 @@
+*{
+    /*This allows me to use the entire browswer window*/
+    padding:0;
+    margin:0;
+    
+        }
+    
+    .header{
+        height: 70vh;
+        width: 100%;
+         background-position: center;
+         background-size:cover;
+        background-image: linear-gradient(black,transparent),url(/Images/background.jpg);
+       position: relative;
+         text-align: center;
+       align-items: center;
+       overflow-x: hidden;
+       overflow-y: hidden;
+       
+    }
+
+    .header h1{
+        padding-top: 110px;
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 30px;  
+    }
+    nav{
+        display:flex;
+        justify-content:space-between;
+        padding:30px;
+        align-items: center;
+        
+        
+    }
+       
+     nav img{
+        width:40px;
+        height:40px;
+        border-radius: 10px;
+    }
+    
+    .right-side li a{
+       text-decoration: none;
+       color: white;
+    }
+    .right-side ol li {
+        display:inline-block;
+        padding:10px;
+        position: relative ;
+       
+    }
+    .right-side li a:hover{
+        text-decoration: underline;
+        color: greenyellow;
+        transition: text-decoration,color .5s ease-out;
+    }
+    
+    .right-side li a:active{
+        color:purple;
+    }
+
+    nav .fa{
+        display: none;
+    }
+
+        
+       @media(max-width:700px){
+        .right-side ol li{
+            display: block;
+        }
+        .right-side{
+            position:absolute;
+            background: brown;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right:-200px;
+            text-align: left;
+            z-index: 1000;
+            transition: 1s;
+            
+            }
+            nav .fa{
+            display: block; 
+            margin:10px;
+            padding:8px;
+            font-size: 25px;
+            color: white;
+            cursor:Pointer;
+            }
+       }
+
+   .big-container{
+    display: flex;
+    margin: auto;
+    width:90%;
+
+   }
+.blog-side{
+    flex-basis: 48%;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.blog-side img{
+    width:100%;
+    margin-bottom: 20px;
+}
+
+.table span{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.table span h4,p{
+    font-weight: lighter;
+    font-family: sans-serif;
+}
+ 
+    
+.comment-area{
+    display: flex;
+    margin:auto;
+    width:87%;
+    margin:auto;
+}
+.blog-side h3{
+    text-align:center;
+    background-color: brown;
+    color: white;
+    padding: 8px 10px;
+}
+.comment-form h2{
+    text-align: left;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+
+.comment-form input, textarea{
+width: 100%;
+margin: 10px 0px;
+text-align: left;
+align-items: left;
+padding: 15px 0px;
+background-color: lightgray;
+border: transparent;
+}
+
+.comment-form{
+    border: 1px solid lightgray;
+    padding: 15px;
+    width: 90%;
+}
+     
+
+.comment-form button{
+    padding:14px 30px;
+    border: 1px solid brown;
+    background-color: white;
+    color:brown;
+}
+
+.comment-form button:hover{
+    background-color: brown;
+    color: white;
+    transition: background-color 2s;
+}
+footer{
+    padding-top: 6.5%;
+}
+    footer p{
+    font-family: 'Noto Sans JP', sans-serif;
+    color: gray;
+    display: flex;
+    justify-content: center;
+}
+
+footer #logos{
+    display: flex;
+    justify-content: center;
+}
+
+#logos i{
+    padding: 1%;
+}
+
+footer a{
+    text-decoration: none;
+    color:turquoise;
+    font-weight: bold;
+}
+footer h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+    font-weight: bolder;
+}
+footer #description{
+    width:70%;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media(max-width:700px){
+    .header h1{
+        margin-left: auto;
+        margin-right: auto;
+       width: 80%;
+    }
+.big-container{
+    display: block;
+    }
+    .comment-area{
+        margin-top: 30%;
+    }
+   }
