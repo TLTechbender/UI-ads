@@ -10,6 +10,11 @@ Here's a few of them bugs:
 1. The hidden menu dosen't cover the entire right side of the viewport when it's clicked (On Mobile).
 2. Some elements kinda look funny
 3. I ran into unecessary problems while trying to deploy it on Github pages, but it was all smooth on netlify
+4. An Overflow-x bug on PC
+5. Transition effects don't align properly on mobile in the campuses container
+6. When the side Menu is open on Mobile, the site is still scrollable.
+
+I hope they get resolved soon.
 
 LIVE site url:
 https://ui-ads.netlify.app
